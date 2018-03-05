@@ -1,0 +1,25 @@
+Hello <%= current_user.email %>
+<%= link_to 'New recipe', new_recipe_path %>
+<h3>Your recipes</h3>
+<div class="row">
+  <div class="small-8 column">
+    <ul class="small-block-grid-3">
+      <% @recipes.each do |recipe| %>
+        <li><%= link_to recipe.title, recipe %></li>
+      <% end %>
+    </ul>
+  </div>
+</div>
+<h3>Shared with you</h3>
+<div class="row">
+  <div class="small-8 column">
+    <ul class="small-block-grid-3">
+      <% @shared_recipes.each do |recipe| %>
+        <li><%= link_to recipe.title, recipe %></li>
+      <% end %>
+    </ul>
+  </div>
+</div>
+</p>
+</br>
+<%= link_to "Go out", destroy_user_session_path, method: :delete %></span></li>
