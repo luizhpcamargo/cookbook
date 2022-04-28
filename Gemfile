@@ -5,18 +5,18 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-gem 'rails', '~> 5.1.5'
+gem 'rails', '~> 5.2.7', '>= 5.2.7.1'
 gem 'sqlite3'
 gem 'puma', '~> 3.7'
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails', '~> 5.0', '>= 5.0.7'
 gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.2'
+gem 'coffee-rails', '~> 4.2', '>= 4.2.2'
 gem 'therubyracer'
 gem 'less-rails'
 gem 'foundation-rails'
 gem 'omniauth-facebook'
-gem 'devise'
-gem 'simple_form'
+gem 'devise', '>= 4.4.2'
+gem 'simple_form', '>= 4.0.0'
 gem 'modernizr-rails'
 gem 'jquery-rails'
 
