@@ -5,24 +5,24 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-gem 'rails', '~> 5.1.5'
+gem 'rails', '~> 6.1.7', '>= 6.1.7.3'
 gem 'sqlite3'
-gem 'puma', '~> 3.7'
-gem 'sass-rails', '~> 5.0'
+gem 'puma', '~> 4.3', '>= 4.3.12'
+gem 'sass-rails', '~> 6.0', '>= 6.0.0'
 gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.2'
+gem 'coffee-rails', '~> 4.2', '>= 4.2.2'
 gem 'therubyracer'
-gem 'less-rails'
+gem 'less-rails', '>= 4.0.0'
 gem 'foundation-rails'
 gem 'omniauth-facebook'
-gem 'devise'
-gem 'simple_form'
+gem 'devise', '>= 4.7.1'
+gem 'simple_form', '>= 5.0.0'
 gem 'modernizr-rails'
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.4.0'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-  gem 'capybara', '~> 2.13'
+  gem 'capybara', '~> 2.18', '>= 2.18.0'
   gem 'selenium-webdriver'
   gem 'rspec-rails'
   gem 'pry'
@@ -33,9 +33,9 @@ group :test do
 end
 
 group :development do
-  gem 'listen', '>= 3.0.5', '< 3.2'
+  gem 'listen', '>= 3.1.5', '< 3.2'
   gem 'spring'
-  gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'spring-watcher-listen', '~> 2.0.1'
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
